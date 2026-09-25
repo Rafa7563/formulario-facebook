@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <div class="brand" aria-label="Logo do Facebook">
+            <h1>facebook</h1>
+        </div>
+
+        <div class="login-card">
+            <form name="meu_form" aria-label="Formulário de cadastro">
+                <h2>Crie uma conta</h2>
+                <p class="sr-only">Preencha os campos abaixo para criar sua conta.</p>
+
+                <div class="campo">
+                    <label for="nomeid">Nome completo</label>
+                    <input type="text" id="nomeid" placeholder="Digite seu nome completo" required="required" name="nome" />
+                </div>
+
+                <div class="campo">
+                    <label for="emailid">Email</label>
+                    <input type="email" id="emailid" placeholder="Digite seu email" name="email" />
+                </div>
+
+                <div class="campo">
+                    <label for="senhaid">Senha</label>
+                    <input type="password" id="senhaid" placeholder="Crie sua senha" name="senha" />
+                </div>
+
+                <div class="campo">
+                    <label for="nascimenid">Data de nascimento</label>
+                    <input type="date" id="nascimenid" name="nascimen" />
+                </div>
+
+                <fieldset>
+                    <legend>Escolha os seus interesses</legend>
+
+                    <div class="check-group" role="group" aria-labelledby="interesses">
+                        <label><input type="checkbox" name="esportes" checked /> Esportes</label>
+                        <label><input type="checkbox" name="gastronomia" /> Gastronomia</label>
+                        <label><input type="checkbox" name="filmes" /> Filmes</label>
+                        <label><input type="checkbox" name="series" /> Séries</label>
+                        <label><input type="checkbox" name="fitness" /> Fitness</label>
+                        <label><input type="checkbox" name="software" /> Software</label>
+                        <label><input type="checkbox" name="hardware" /> Hardware</label>
+                        <label><input type="checkbox" name="games" /> Games</label>
+                        <label><input type="checkbox" name="politica" /> Política</label>
+                    </div>
+                </fieldset>
+
+                
+
+                <button type="submit" class="btn-enviar">Enviar formulário</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
